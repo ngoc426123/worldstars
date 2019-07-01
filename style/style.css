@@ -90,6 +90,82 @@ p{
     line-height: 0px;
     height: 0;
 }
+img{
+    max-width: 100%;
+}
+/*==========================================================================*/
+#wst-header {
+    padding: 9px 0px;
+}
+#wst-header .wrapper{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#wst-header .wrapper>div{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    max-width: 80px;
+    margin-right: 65px;
+}
+.menuTop ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.menuTop ul li{
+    margin-right: 40px;
+}
+.menuTop ul li:last-child{
+    margin-right: 0;
+}
+.menuTop ul li a{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.searchTop{
+    width: 270px;
+    position: relative;
+}
+.searchTop input{
+    width: 100%;
+    height: 40px;
+    background: #f8a12b;
+    color:#ffffff;
+    border:none;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.searchTop input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+}
+.searchTop input::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+}
+.searchTop button{
+    position: absolute;
+    right:10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: none;
+    border:none;
+    padding: 0;
+    color:#ffffff;
+}
 /*==========================================================================*/
 .breadcrumb {
     padding: 10px 0 7px;
@@ -323,6 +399,89 @@ p{
 .myTags ul li a {
     font-style: italic;
 }
+/*============================================================*/
+#wst-footer{
+    padding: 20px 0;
+    background-color: #086e8e;
+}
+#wst-footer .wrapper{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoFoot{
+    max-width: 90px;
+    margin-bottom: 10px;
+}
+.copyright{
+    color:#cccccc;
+}
+.copyright span{
+    color:#f8a12b;
+}
+.socialFoot{
+    margin-bottom: 20px;
+}
+.socialFoot ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.socialFoot ul li{
+    margin-right: 25px;
+}
+.socialFoot ul li:last-child{
+    margin-right: 0;
+}
+.socialFoot ul li a{
+    display: block;
+    font-size: 30px;
+    line-height: 40px;
+    color:#ffffff;
+}
+.menuFoot ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menuFoot ul li{
+    position: relative;
+    margin-right: 35px;
+}
+.menuFoot ul li ~ li:before{
+    content: "/";
+    position: absolute;
+    left:-20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color:#ffffff;
+    opacity: 0.5;
+}
+.menuFoot ul li:last-child{
+    margin-right: 0;
+}
+.menuFoot ul li a{
+    display: block;
+    font-size: 13px;
+    line-height: 21px;
+    color:#ffffff;
+    opacity: 0.5;
+}
+.menuFoot ul li a:hover{
+    color:1;
+}
 /*==========================================================================*/
 /*============================RESPONSIVE====================================*/
 /*==========================================================================*/
@@ -338,7 +497,15 @@ p{
 .wrapper{
     padding: 0 10px;
 }
-
+.logo {
+    max-width: 57.4px;
+}
+#wst-header .wrapper{
+    padding-right: 0;
+}
+#wst-header{
+    padding: 0;
+}
 }
 
 @media all and (max-width: 768px){
@@ -354,7 +521,26 @@ p{
 }
 
 @media all and (max-width: 767px){
-
+#wst-footer .wrapper{
+    display: block;
+}
+.logoFoot{
+    margin:0 auto;
+    margin-bottom: 10px;
+}
+.copyright{
+    text-align: center;
+}
+.socialFoot ul,
+.menuFoot ul{
+    justify-content: center;
+}
+.socialFoot{
+    margin-bottom: 10px;
+}
+.menuFoot{
+    margin-bottom: 10px;
+}
 }
 
 @media all and (max-width: 450px){
