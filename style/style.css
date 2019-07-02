@@ -21,7 +21,7 @@ a{
     transition: all 0.3s linear;
 }
 a:hover{
-    color: #faed24;
+    color: #086e8e;
 }
 ul, li{
     list-style: none;
@@ -92,6 +92,14 @@ p{
 }
 img{
     max-width: 100%;
+}
+.row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row>*[class^="col-"]{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 /*==========================================================================*/
 #wst-header {
@@ -486,14 +494,7 @@ img{
 /*============================RESPONSIVE====================================*/
 /*==========================================================================*/
 @media all and (max-width: 991px){
-.row{
-    margin-left: -10px;
-    margin-right: -10px;
-}
-.row>*[class^="col-"]{
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 .wrapper{
     padding: 0 10px;
 }
@@ -505,6 +506,7 @@ img{
 }
 #wst-header{
     padding: 0;
+    margin-bottom: 10px;
 }
 }
 
@@ -517,7 +519,6 @@ img{
     padding-left: 5px;
     padding-right: 5px;
 }
-
 }
 
 @media all and (max-width: 767px){

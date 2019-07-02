@@ -1,4 +1,78 @@
-
+.singer{
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+}
+.singer .img a{
+	display: block;
+	padding-top: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.singer .img a img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: -webkit-transform 4s cubic-bezier(0,.6,.45,1);
+	transition: transform 4s cubic-bezier(0,.6,.45,1);
+	transition: transform 4s cubic-bezier(0,.6,.45,1), -webkit-transform 7s cubic-bezier(0,.6,.45,1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.singer .img a:hover img{
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	transform: scale(1.15);
+}
+.singer:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #086e8e;
+	opacity: 0;
+	z-index: 1;
+	pointer-events: none;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.singer:hover:before{
+	opacity: 0.7;
+}
+.singer .caption{
+	bottom: 15px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.singer:hover .caption{
+	opacity: 1;
+}
+.singer .caption .job{
+	font-size: 12px;
+	line-height: 20px;
+	color:#ffffff;
+	text-align: center;
+}
+.singer .caption .name{
+	text-transform: uppercase;
+	color:#ffffff;
+}
 /*==========================================================================*/
 /*============================RESPONSIVE====================================*/
 /*==========================================================================*/
