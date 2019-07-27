@@ -31,7 +31,7 @@ html.openmenu2 body{
 /*======================================================================*/
 .menu_mobile .icon {
     width: 50px;
-    height: 60px;
+    height: 50px;
     cursor: pointer;
     color: #ffffff;
     background: #006e8e;
@@ -64,10 +64,10 @@ html.openmenu2 body{
     transition: transform 0.2s linear 0.3s, top 0.2s linear;
 }
 .menu_mobile .icon:before{
-    top: 21px;
+    top: 15px;
 }
 .menu_mobile .icon:after {
-    top: 36px;
+    top: 33px;
 }
 .menu_mobile.showmenu .icon:before{
     top: 27px;
